@@ -1,0 +1,2 @@
+# PocKalkulatorWyborczyHtml
+Prototyp kalkulatora wyborczego
