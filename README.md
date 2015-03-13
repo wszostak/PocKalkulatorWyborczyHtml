@@ -21,7 +21,9 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 ## Atrakcyjna, zachęcająca grafika :-)
 
 Wzór formularza dla wyborów prezydenckich w roku 2015.
+
 ![Wzór formularza](https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/images/formularz_wzor.png)
 
 Wygląd prototypu formularza w HTML (work in progress)
+
 ![Wygląd prototypu formularza w HTML](https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/images/formularz_prototyp_html.png)
