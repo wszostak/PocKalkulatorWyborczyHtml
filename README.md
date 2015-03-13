@@ -13,3 +13,7 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
+
+## Informacje o projekcie OpenPKW
+- Strona główna projektu: https://openpkw.pl/
+- Grupa dyskusyjna: http://openpkw.pl/pipermail/lista/
