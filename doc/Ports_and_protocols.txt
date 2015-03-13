@@ -1,6 +1,6 @@
-Name: sc-ec2-openpkw
-Public DNS: ec2-54-173-158-97.compute-1.amazonaws.com
-Public IP: 54.173.158.97
+Name: sc-ec2-openpkw-dev
+Public DNS: ec2-52-1-164-93.compute-1.amazonaws.com
+Public IP: 52.1.164.93
 - httpd
 - tomcat
 - jboss
