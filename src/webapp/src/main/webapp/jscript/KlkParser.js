@@ -14,7 +14,11 @@ OpenPKW.KlkParser = {
 		return result;
 	},
 
-	loadPollingStationsData: function(xmlDoc) {
+	loadPollingStationsData: function (xmlDoc) {
+	    if (typeof (xmlDoc) == "string") {
+	        xmlDoc = $.parseXML(xmlDoc);
+	    }
+
 		var numberOfPollingStations = OpenPKW.KlkParser.getNumberOfNodes(xmlDoc, 'count(/kalkulator/akcja/jednostka/jednostka/jednostka/obwod)');
 		var result = new Array();
 		for (idx = 0; idx < numberOfPollingStations; idx++) {
