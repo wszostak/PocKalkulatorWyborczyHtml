@@ -8,4 +8,6 @@ public @interface FormElement {
 	int page();
 	int x();
 	int y();
+	int digits() default 0;
+	int cellWidth() default 25;
 }

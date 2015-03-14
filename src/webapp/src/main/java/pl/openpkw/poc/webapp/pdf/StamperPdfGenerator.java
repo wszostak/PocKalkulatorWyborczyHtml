@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.text.DecimalFormat;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -27,6 +28,8 @@ public class StamperPdfGenerator implements IPdfGenerator {
     @Inject
     private FontsManager fontsManager;
 
+    private DecimalFormat df = new DecimalFormat("0");
+
     public byte[] generate(Formularz form) {
         try {
             PdfReader pdfReader = new PdfReader(this.getClass().getResource("/templates/prezydent_2015.pdf"));
@@ -42,7 +45,18 @@ public class StamperPdfGenerator implements IPdfGenerator {
                     int page = ((FormElement) a).page();
                     int x = ((FormElement) a).x();
                     int y = ((FormElement) a).y();
-                    print(pdfStamper, text, page, x, y);
+                    int digits = ((FormElement) a).digits();
+                    int cellWidth = ((FormElement) a).cellWidth();
+
+                    if (digits > 0) {
+                        text = formatString(text, digits);
+                        for (char ch : text.toCharArray()) {
+                            print(pdfStamper, "" + ch, page, x, y);
+                            x = x + cellWidth;
+                        }
+                    } else {
+                        print(pdfStamper, text, page, x, y);
+                    }
                 }
             }
 
@@ -71,5 +85,36 @@ public class StamperPdfGenerator implements IPdfGenerator {
         f.setColor(0, 0, 0);
         Phrase p = new Phrase(text, f);
         ColumnText.showTextAligned(content, Element.ALIGN_LEFT, p, x, y, 0);
+    }
+
+    private String formatString(String numberStr, int digits) {
+        if (numberStr == null) {
+            return "";
+        }
+        if (numberStr.length() == 0) {
+            return "";
+        }
+
+        long number = 0;
+        try {
+            number = Long.parseLong(numberStr);
+        } catch (Exception ex) {
+            return "B³¹d: " + numberStr;
+        }
+
+        String formattedNumber = df.format(number);
+
+        while (formattedNumber.length() < digits) {
+            formattedNumber = "*" + formattedNumber;
+        }
+
+        // String wideNumber = "";
+        // for (int i = 0; i < formattedNumber.length(); i++) {
+        // wideNumber += formattedNumber.charAt(i) + "        ";
+        // }
+        //
+        // return wideNumber;
+
+        return formattedNumber;
     }
 }
