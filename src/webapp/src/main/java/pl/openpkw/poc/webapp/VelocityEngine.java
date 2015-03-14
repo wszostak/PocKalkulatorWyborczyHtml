@@ -15,27 +15,26 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 @Singleton
 public class VelocityEngine {
 
-	@PostConstruct
-	public void initialize() {
-		Properties velocityProperties = new Properties();
-		velocityProperties.setProperty("resource.loader", "classpath");
-		velocityProperties.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
-		velocityProperties.setProperty("input.encoding", "UTF-8");
-//		velocityProperties.setProperty("output.encoding", "UTF-8");
-		Velocity.init(velocityProperties);
-	}
+    @PostConstruct
+    public void initialize() {
+        Properties velocityProperties = new Properties();
+        velocityProperties.setProperty("resource.loader", "classpath");
+        velocityProperties.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
+        velocityProperties.setProperty("input.encoding", "UTF-8");
+        Velocity.init(velocityProperties);
+    }
 
-	public String process(String templateName, VelocityContext context) {
-		try {
-			Template template = Velocity.getTemplate(templateName);
-			ByteArrayOutputStream out = new ByteArrayOutputStream();
-			OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
-			template.merge(context, outWriter);
-			outWriter.close();
-			String result = new String(out.toByteArray(), "UTF-8");
-			return result;
-		} catch (Exception ex) {
-			throw new RuntimeException("Failed to process a Velocity template: " + ex.getMessage(), ex);
-		}
-	}
+    public String process(String templateName, VelocityContext context) {
+        try {
+            Template template = Velocity.getTemplate(templateName);
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            OutputStreamWriter outWriter = new OutputStreamWriter(out, "UTF-8");
+            template.merge(context, outWriter);
+            outWriter.close();
+            String result = new String(out.toByteArray(), "UTF-8");
+            return result;
+        } catch (Exception ex) {
+            throw new RuntimeException("Failed to process a Velocity template: " + ex.getMessage(), ex);
+        }
+    }
 }
