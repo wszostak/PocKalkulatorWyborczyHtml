@@ -11,7 +11,16 @@
 	<script src="jscript/ValidationRules.js"></script> 
 	<script src="jscript/Sending.js"></script>
 	<script src="jscript/FillingWithExampleData.js"></script>
-	<script src="jscript/Printing.js"></script> 
+	<script src="jscript/Printing.js"></script>
+
+	<!-- PDF Generator BEGIN-->
+	<script type="text/javascript" src="jscript/JsBarcode.all.min.js"></script>
+    <script type="text/javascript" src="jscript/md5.min.js"></script>
+	<script type="text/javascript" src="jscript/pdfmake/pdfmake.min.js"></script>
+    <script type="text/javascript" src="jscript/pdfmake/vfs_fonts.js"></script>
+    <script type="text/javascript" src="jscript/pdfGeneratorUtils.js"></script>
+    <script type="text/javascript" src="jscript/pdfGenerator.js"></script>
+	<!-- PDF Generator  END-->
 </head>
 <body x-ng-controller="kalkulatorController">
 
@@ -19,7 +28,7 @@
 	<h1>Kalkulator OpenPKW - Komisja Obwodowa</h1>
 	<input type="hidden" id="liczba_wyborcow" name="liczba_wyborcow" value="">
 	<input type="hidden" id="pdfMethod" name="pdfMethod"/>
-	<p class="info">Wersja 11. Wypełnienie formularza przykładowymi danymi. Dwie wersje drukowania formularza jako pliku PDF. Zalążek generowania formularza w formacie XML. Taksonomia geograficzna pobierana jest ze słownika <a href="teryt.json">TERYT</a>. Dane komisji obwodowych pobierane pobierane są z <a href="106101.xml">pliku KLK</a> (na razie tylko dla Łodzi).</p>
+	<p class="info">Wersja 12. Wypełnienie formularza przykładowymi danymi. Trzy wersje drukowania formularza jako pliku PDF. Trzecia wersja (generacja po stronie klienta) nie pobiera danych z formularza. Zalążek generowania formularza w formacie XML. Taksonomia geograficzna pobierana jest ze słownika <a href="teryt.json">TERYT</a>. Dane komisji obwodowych pobierane pobierane są z <a href="106101.xml">pliku KLK</a> (na razie tylko dla Łodzi).</p>
 	<div>
 		<label for="wyborWojewodztwa" style="width: 150px; display: inline-block">Wybierz wyjewództwo</label>
         <select id="wyborWojewodztwa" style="width: 200px" 
@@ -52,6 +61,7 @@
 	<button type="button" onClick="send()">Wyślij formularz</button>
 	<button type="button" onClick="printForm(1); return false;">Wydrukuj formularz (metoda 1)</button>
 	<button type="button" onClick="printForm(2); return false;">Wydrukuj formularz (metoda 2)</button>
+	<button type="button" onClick="printForm(3); return false;">Wydrukuj formularz (metoda 3)</button>
 	<hr>
 
 	<table class="with_borders">
@@ -337,6 +347,6 @@
     <script src="app/kalkulator/kalkulatorController.js"></script>
 	
 </form>
-
+<img style="display:none;" src="" id="barcode">	
 </body>
 </html>

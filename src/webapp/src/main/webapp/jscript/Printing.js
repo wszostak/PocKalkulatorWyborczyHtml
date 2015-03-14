@@ -1,4 +1,9 @@
 function printForm(method) {
-	$("#pdfMethod").val(method);
-	$("#theForm").submit();
+	if(parseInt(method) == 3){
+		pdfMake.createPdf(docDefinition).download('poc_prezydent_formularz.pdf');
+	} else {
+		$("#pdfMethod").val(method);
+		$("#theForm").submit();	
+	}
+	
 }
