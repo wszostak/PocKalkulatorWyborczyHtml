@@ -1,0 +1,3 @@
+Install nodejs in AWS EC3
+
+sudo yum install nodejs npm --enablerepo=epel
