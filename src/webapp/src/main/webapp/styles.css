@@ -132,18 +132,9 @@ table.with_borders td {
     height: 100%;
 }
 
-.top-data-title{
+.data-title{
 	margin: 0;
 	line-height: 70px;
-	font-size: 14px;
-}
-
-.align-right{
-	text-align: right;
-}
-
-.align-left{
-	text-align: left;
 }
 
 .last-cell{
@@ -251,4 +242,26 @@ table.with_borders td {
 
 .space{
 	letter-spacing: 5px;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.size-h4{
+	font-size: 14px;
+}
+
+.display-table{
+	display: table;
+}
+
+.cell-style-center{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
