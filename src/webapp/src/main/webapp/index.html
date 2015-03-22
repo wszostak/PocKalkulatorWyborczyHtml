@@ -30,7 +30,7 @@
 			
 			<form id="theForm" action="PdfServlet" method="post">
 				
-				<div class="col-md-12">
+				<div class="col-md-12 no-padding">
 					<h1 style="text-transform: uppercase;">Kalkulator OpenPKW - Komisja Obwodowa</h1>
 					<input type="hidden" id="liczba_wyborcow" name="liczba_wyborcow" value="">
 					<input type="hidden" id="pdfMethod" name="pdfMethod"/>
@@ -91,9 +91,9 @@
 					<hr>
 				</div>
 				
-				<div class="col-md-12 top-button"><button class="black" type="button" onClick="fill()">Wypełnij formularz przykładowymi danymi</button></div>
+				<div class="col-md-12 no-padding top-button"><button class="black" type="button" onClick="fill()">Wypełnij formularz przykładowymi danymi</button></div>
 				<hr>
-				<div class="col-md-12 top-button" style="margin-bottom: 30px; ">
+				<div class="col-md-12 no-padding top-button" style="margin-bottom: 30px; ">
 					<button class="yellow" type="button" onClick="validate()">Sprawdź formularz</button>
 					<button class="green" type="button" onClick="send()">Wyślij formularz</button>
 					<button class="blue" type="button" onClick="printForm(1); return false;">Wydrukuj formularz (metoda 1)</button>
@@ -101,7 +101,7 @@
 				</div>
 				<hr>
 			
-				<div class="col-md-12">
+				<div class="col-md-12 no-padding">
 					<div class="main-table-calc">
 						<div class="top-data">
 							
