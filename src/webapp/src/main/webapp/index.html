@@ -74,7 +74,7 @@
 						<div class="top-data">
 							
 							<div class="data-row">
-								<h1 style="font-weight: bold;">Wybory prezydenta rzeczypospolitej polskiej</h1>
+								<h1 class="font-bold" >Wybory Prezydenta rzeczypospolitej polskiej</h1>
 							</div>
 							
 							<div class="data-row">
@@ -85,7 +85,7 @@
 									<div class="col-md-7 height-100">
 										
 										<div class="number-cell border-solid-right">
-											<input type="text" id="kodGminy" name="kodGminy" value ="106101"  readonly class="space">
+											<input type="text" id="kodGminy" name="kodGminy" value ="" x-ng-value="m.pollingStation.kodGminy" readonly class="space">
 										</div>
 										
 									</div>
@@ -97,7 +97,7 @@
 									</div>
 									<div class="col-md-5 height-100 padding-right-0">
 										<div class="number-cell">
-											<input type="text" id="kodGminy" name="kodGminy" value ="0258" readonly class="space">
+											<input type="text" id="nrObwodu" name="nrObwodu" x-ng-value="m.pollingStation.nrObwodu" value ="" readonly class="space">
 										</div>
 									</div>
 									
@@ -109,17 +109,17 @@
 									<h4 class="align-right size-h4 cell-style-center">Siedziba Obwodowej Komisji Wyborczej (adres)</h4>
 								</div>
 								<div class="col-md-8 height-100">
-									<input class="input-cell" type="text" id="kodGminy" name="kodGminy" value ="XV Liceum Ogólnokształcące im. J. Kasprowicza, ul. Traktorowa 77" readonly>
+									<input class="input-cell" type="text" id="adresOKW" name="adresOKW" x-ng-value="m.pollingStation.siedzibaKomisjiObwodowej"readonly>
 								</div>
 							</div>
 							
-							<div class="data-row">
+							<div class="data-row last-no-border">
 								<div class="col-md-4 last-cell height-100">
 									<div class="col-md-4 height-100 display-table">
 										<p class="cell-style-center">Gmina / Dzielnica</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding">
-										<input type="text" id="kodGminy" name="kodGminy" value ="Szczecin"readonly>
+										<input type="text" id="gmina" name="gmina" x-ng-value="m.pollingStation.gmina" value =""readonly>
 									</div>
 								</div>
 								<div class="col-md-3 last-cell height-100 padding-left-0">
@@ -127,7 +127,7 @@
 										<p class="cell-style-center">Powiat</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding"> 
-										<input type="text" id="kodGminy" name="kodGminy" value ="Szczecin"readonly>
+										<input type="text" id="powiat" name="powiat" x-ng-value="m.pollingStation.powiat" value =""readonly>
 									</div>
 								</div>
 								<div class="col-md-5 height-100 padding-left-0">
@@ -135,15 +135,21 @@
 										<p class="cell-style-center">Województwo</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding">
-										<input type="text" id="kodGminy" name="kodGminy" value ="Zachodniopomorskie"readonly>
+										<input type="text" id="wojewodztwo" name="wojewodztwo" x-ng-value="m.pollingStation.wojewodztwo" value="" readonly>
 									</div>
 								</div>
 							</div>
 						</div>
 						
-						<div class="middle-data" style="padding-top: 30px;">
-							<h3 style="text-align: center; font-size: 20px;">Protokół wyników głosowania w obwodziew wyborach Prezydenta Rzeczypospolitej Polskiej przeprowadzonego w dniu <input style="text-align: center;  border-bottom: 3px dotted #333; border-left: none; border-right: none; border-top: none; background: none; "type="text" id="kodGminy" name="kodGminy" value ="" placeholder="Wprowadź datę"></h3>
-							<p>Głosowanie rozpoczęło się dnia <input style=" text-align: center; border-bottom: 3px dotted #333; border-left: none; border-right: none; border-top: none; background: none; "type="text" id="kodGminy" name="kodGminy" value ="" placeholder="Wprowadź datę"> o godz. <input style=" text-align: center;  border-bottom: 3px dotted #333; border-left: none; border-right: none; border-top: none; background: none; "type="text" id="kodGminy" name="kodGminy" value ="" placeholder="Godz. rozpoczęcia"> i trwało do godz. <input style=" text-align: center;  border-bottom: 3px dotted #333; border-left: none; border-right: none; border-top: none; background: none; text-aling: center;"type="text" id="kodGminy" name="kodGminy" value ="" placeholder="Godz. zakończenia"> </p>
+						<div class="middle-data">
+							
+							<h3 class="size-h3 align-center">Protokół wyników głosowania w obwodziew wyborach Prezydenta Rzeczypospolitej Polskiej przeprowadzonego w dniu 
+								<input class="align-center input-info" type="text" id="dataGlosowania" name="dataGlosowania" value ="" placeholder="Wprowadź datę"></h3>
+							<p>Głosowanie rozpoczęło się dnia 
+								<input class="input-info align-center" type="text" id="dataGlosowania" name="dataGlosowania" value ="" placeholder="Wprowadź datę"> o godz. 
+								<input class="input-info align-center" type="text" id="godzinaGlosowaniaOd" name="godzinaGlosowaniaOd" value ="" placeholder="Godz. rozpoczęcia"> i trwało do godz. 
+								<input class="input-info align-center" type="text" id="godzinaGlosowaniaDo" name="godzinaGlosowaniaDo" value ="" placeholder="Godz. zakończenia"> </p>
+							
 							<div class="col-md-12" style="padding-top: 30px; padding-left: 0; padding-right: 0;">
 								<h3 style="font-size: 20px; font-weight: bold">I. Rozliczenie kart do głosowania</h3>
 								<div class="middle-data-box">

@@ -212,6 +212,18 @@ table.with_borders td {
     text-align: center;
 }
 
+.middle-data{
+	overflow: hidden;
+    padding-top: 30px;
+}
+
+.input-info{
+	border-bottom: 3px dotted #333; 
+	border-left: none; 
+	border-right: none; 
+	border-top: none; 
+	background: none; 
+}
 
 /** HELPER CLASSES **/
 
@@ -252,6 +264,19 @@ table.with_borders td {
 	text-align: left;
 }
 
+.align-center{
+	text-align: center;
+}
+
+.table-title{
+	font-weight: bold;
+	text-align: right;
+}
+
+.size-h3{
+	font-size: 20px;
+}
+
 .size-h4{
 	font-size: 14px;
 }
@@ -264,4 +289,12 @@ table.with_borders td {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.last-no-border{
+	border: none !important;
+}
+
+.font-bold{
+	font-weight: bold;
 }
