@@ -1,18 +1,29 @@
 ﻿<!DOCTYPE html>
+
 <html x-ng-app="app">
-<head>
-	<meta charset="UTF-8"> 
-	<title>Wybory Prezydenta Rzeczypospolitej Polskiej</title>
-	<link rel="stylesheet" href="styles.css">
-	<script src="jscript/jquery-1.11.2.min.js"></script>
-	<script src="jscript/Candidate.js"></script>
-	<script src="jscript/KlkParser.js"></script>
-	<script src="jscript/PollingStationData.js"></script>
-	<script src="jscript/ValidationRules.js"></script> 
-	<script src="jscript/Sending.js"></script>
-	<script src="jscript/FillingWithExampleData.js"></script>
-	<script src="jscript/Printing.js"></script> 
-</head>
+	
+	<head>
+		
+		<meta charset="UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+		<title>Wybory Prezydenta Rzeczypospolitej Polskiej</title>
+		
+		<link type="text/css" rel="stylesheet" href="styles.css">
+		<link type="text/css" rel="stylesheet" href="bootstrap.css">
+		
+		<script type="text/javascript" src="jscript/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="jscript/Candidate.js"></script>
+		<script type="text/javascript" src="jscript/KlkParser.js"></script>
+		<script type="text/javascript" src="jscript/PollingStationData.js"></script>
+		<script type="text/javascript" src="jscript/ValidationRules.js"></script> 
+		<script type="text/javascript" src="jscript/Sending.js"></script>
+		<script type="text/javascript" src="jscript/FillingWithExampleData.js"></script>
+		<script type="text/javascript" src="jscript/Printing.js"></script> 
+		
+	</head>
+	
 <body x-ng-controller="kalkulatorController">
 
 <form id="theForm" action="PdfServlet" method="post">
