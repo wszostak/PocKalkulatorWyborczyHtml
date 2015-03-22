@@ -93,3 +93,138 @@ table.with_borders td {
 .info {
 	text-align: center;
 }
+
+/** 22.03.2015 **/
+	
+.main-table-calc{
+	width: 100%;
+}
+
+.container-box{
+	width: 900px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.top-data{
+	width: 100%;
+	border: 1px solid #ddd;
+	background-color: #f1f1ff; 
+	overflow: hidden;
+}
+
+.data-row{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	display: block;	
+	position:relative;
+	height: 70px;
+}
+
+.data-row h1{
+	border: medium none;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.number-cell{
+	border-left: 1px solid #bbb;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.top-data-title{
+	margin: 0;
+	line-height: 70px;
+	font-size: 14px;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.last-cell{
+	border-right: 1px solid #bbb;
+}
+
+.number-cell input{
+	border: medium none;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    background: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.input-cell{
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: none;
+	line-height: 70px;
+	font-weight: bold;
+}
+
+.no-padding{
+	padding: 0 !important;
+}
+
+.bg-1{
+	background: #eee;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.bg-2{
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.middle-data-box{
+	padding: 0;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.cell-middle{
+	height: 100%;
+	width: 20%;
+	border-left: 1px solid #ddd;
+	float: left;
+}
+
+.cell-middle input{
+	border: medium none;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    background: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cell-middle-name{
+	height: 100%;
+	width: 100%;
+}
+
+.cell-middle-name input{
+	border: medium none;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    background: none;
+    text-align: center;
+}
