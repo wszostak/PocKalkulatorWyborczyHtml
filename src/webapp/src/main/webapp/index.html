@@ -141,7 +141,7 @@
 									<h4 class="align-right size-h4 cell-style-center">Siedziba Obwodowej Komisji Wyborczej (adres)</h4>
 								</div>
 								<div class="col-md-8 height-100">
-									<input class="input-cell" type="text" id="adresOKW" name="adresOKW" x-ng-value="m.pollingStation.siedzibaKomisjiObwodowej"readonly>
+									<input class="input-cell" type="text" id="adresOKW" name="adresOKW" x-ng-value="m.pollingStation.siedzibaKomisjiObwodowej" readonly>
 								</div>
 							</div>
 							
@@ -151,7 +151,7 @@
 										<p class="cell-style-center">Gmina / Dzielnica</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding">
-										<input type="text" id="gmina" name="gmina" x-ng-value="m.pollingStation.gmina" value =""readonly>
+										<input type="text" id="gmina" name="gmina" x-ng-value="m.pollingStation.gmina" readonly>
 									</div>
 								</div>
 								<div class="col-md-3 last-cell height-100 padding-left-0">
@@ -159,7 +159,7 @@
 										<p class="cell-style-center">Powiat</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding"> 
-										<input type="text" id="powiat" name="powiat" x-ng-value="m.pollingStation.powiat" value =""readonly>
+										<input type="text" id="powiat" name="powiat" x-ng-value="m.pollingStation.powiat" readonly>
 									</div>
 								</div>
 								<div class="col-md-5 height-100 padding-left-0">
@@ -167,7 +167,7 @@
 										<p class="cell-style-center">Województwo</p>
 									</div>
 									<div class="col-md-8 number-cell height-100 no-padding">
-										<input type="text" id="wojewodztwo" name="wojewodztwo" x-ng-value="m.pollingStation.wojewodztwo" value="" readonly>
+										<input type="text" id="wojewodztwo" name="wojewodztwo" x-ng-value="m.pollingStation.wojewodztwo" readonly>
 									</div>
 								</div>
 							</div>
@@ -615,15 +615,16 @@
 								<div class="number-cell no-border"><input style="padding: 0 10px;" placeholder="Imię i nazwisko" class="cell-style-center-left" type="text" id="czlonek_09" name="czlonek_09" value =""></div>
 							</div>
 									
-						</div>
-
-		
-	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+					</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>	
+	 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
 	    <script src="app/main.js"></script>
 	    <script src="app/common/resources.js"></script>
 	    <script src="app/kalkulator/kalkulatorController.js"></script>
-		
-		</form>
-	</div>
+	
 </body>
 </html>
