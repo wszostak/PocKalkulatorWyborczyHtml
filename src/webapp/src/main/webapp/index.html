@@ -29,6 +29,7 @@
 		<div class="container-box">	
 			
 			<form id="theForm" action="PdfServlet" method="post">
+				
 				<h1>Kalkulator OpenPKW - Komisja Obwodowa</h1>
 				<input type="hidden" id="liczba_wyborcow" name="liczba_wyborcow" value="">
 				<input type="hidden" id="pdfMethod" name="pdfMethod"/>
@@ -77,11 +78,12 @@
 							</div>
 							
 							<div class="data-row">
-								<div class="col-md-6" style="height: 100%; min-height: 100%;">
-									<div class="col-md-5" style="height: 100%; min-height: 100%;">
+								<div class="col-md-6 height-100">
+									<div class="col-md-5 height-100">
 										<h4 class="align-left" style="font-size: 14px; ">Kod terytorialny gminy (dzielnicy w m. st. Warszawie)</h4>
 									</div>
-									<div style="height: 100%; min-height: 100%;" class="col-md-7">
+									<div class="col-md-7 height-100">
+										
 										<div class="number-cell col-md-2">
 											<input type="text" id="kodGminy" name="kodGminy" value ="1"  readonly>
 										</div>
@@ -100,9 +102,10 @@
 										<div class="number-cell last-cell col-md-2">
 											<input type="text" id="kodGminy" name="kodGminy" value ="1" readonly>
 										</div>
+										
 									</div>
 								</div>
-								<div class="col-md-6" style="height: 100%; min-height: 100%; padding-right: 0;">
+								<div class="col-md-6 height-100 padding-right-0">
 									
 									<div class="col-md-7" style="height: 100%; min-height: 100%;">
 										<h4 class="top-data-title align-right">Nr obwodu głosowania</h4>
