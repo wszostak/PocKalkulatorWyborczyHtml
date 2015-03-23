@@ -13,15 +13,15 @@ Obecni: Sebastian Celejewski, Adam Kowalewski, Dennis Gabriel Kruk, Adam Brzozow
 
 Tematyka:
 Spotkanie wprowadzające
-1. Krótka historia OpenPKW
-2. Co się obecnie dzieje (prace analityczne, deweloperskie, administracyjne i organizacyjne).
-3. Specyfika pracy (zespół się formuje, ustalamy zasady, porządkujemy dokumentację itp.)
-4. Who is who w projekcie
-5. Plan działania (pierwszy etap: Kalkulator OpenPKW).
-6. Kalkulator OpenPKW (funkcjonalność, technologia, deploymenty, plany itp.).
-7. Zaproszenie na spotkanie w środę.
+- Krótka historia OpenPKW
+- Co się obecnie dzieje (prace analityczne, deweloperskie, administracyjne i organizacyjne).
+- Specyfika pracy (zespół się formuje, ustalamy zasady, porządkujemy dokumentację itp.)
+- Who is who w projekcie
+- Plan działania (pierwszy etap: Kalkulator OpenPKW).
+- Kalkulator OpenPKW (funkcjonalność, technologia, deploymenty, plany itp.).
+- Zaproszenie na spotkanie w środę.
 
 Zadania na najbliższy czas:
-1. Przerobienie prototypu HTML z aplikacji JavaEE na aplikację webową (zaczął to już Marcin Tokarski).
-2. Zaimplementowanie brakującej funkcjonalności (lista zadań jest w Trello: https://trello.com/b/1PocOld8/poc-wp)
-3. Skonfigurowanie continuous delivery dla nowej aplikacji webowej.
+- Przerobienie prototypu HTML z aplikacji JavaEE na aplikację webową (zaczął to już Marcin Tokarski).
+- Zaimplementowanie brakującej funkcjonalności (lista zadań jest w Trello: https://trello.com/b/1PocOld8/poc-wp)
+- Skonfigurowanie continuous delivery dla nowej aplikacji webowej.
