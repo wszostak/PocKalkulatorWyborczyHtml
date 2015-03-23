@@ -23,7 +23,8 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 - Być może wkrótce przejdziemy na inną strukturę, wygodniejszą dla programistów front-endowych.
 
 ## Konfiguracja środowiska deweloperskiego
-- TODO: Auto-formatter dla Eclipse.
+- Eclipse: Konfiguracja formattera: https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/konfiguracja/code-conventions-eclipse.xml
+- Eclipse: Domyślne kodowanie: UTF-8 (Window/Preferences/General/Workspace/Text file encoding
 
 ## Informacje o projekcie OpenPKW
 - Strona główna projektu: https://openpkw.pl/
