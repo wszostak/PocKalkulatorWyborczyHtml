@@ -99,7 +99,7 @@ public class StamperPdfGenerator implements IPdfGenerator {
         try {
             number = Long.parseLong(numberStr);
         } catch (Exception ex) {
-            return "B³¹d: " + numberStr;
+            return "BÅ‚Ä…d: " + numberStr;
         }
 
         String formattedNumber = df.format(number);
@@ -107,13 +107,6 @@ public class StamperPdfGenerator implements IPdfGenerator {
         while (formattedNumber.length() < digits) {
             formattedNumber = "*" + formattedNumber;
         }
-
-        // String wideNumber = "";
-        // for (int i = 0; i < formattedNumber.length(); i++) {
-        // wideNumber += formattedNumber.charAt(i) + "        ";
-        // }
-        //
-        // return wideNumber;
 
         return formattedNumber;
     }
