@@ -1,7 +1,7 @@
 ﻿# Protokoły spotkań
 
 ## Aktualna lista TODO
-- Założenie konta na GitHubie.
+- Założenie konta na GitHubie i wysłanie do Sebastiana.
 - Zainstalowanie Gita (np. GitBasha, GitEye) u siebie na komputerze.
 - Ściągnięcie repozytorium openpkw/PocKalkulatorWyborczyHtml
 - Lektura - jak działa git (https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/)
