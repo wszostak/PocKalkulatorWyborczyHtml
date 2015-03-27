@@ -1,12 +1,18 @@
 ﻿# Protokoły spotkań
 
 ## Aktualna lista TODO
-- Założenie konta na GitHubie i wysłanie do Sebastiana.
-- Zainstalowanie Gita (np. GitBasha, GitEye) u siebie na komputerze.
-- Ściągnięcie repozytorium openpkw/PocKalkulatorWyborczyHtml
-- Lektura - jak działa git (https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/)
-- Lektura - Continuous Delivery (wiele materiałów dostępnych w sieci).
-- Lektura - testowanie JScript (np. Karma)
+- Marcin, Kamil i Kacper - uporządkowanie kodu frontendu i przerobienie go na Angulara.
+- Sebastian - poszukiwanie admina Apache na listach dyskusyjnych
+
+## 27 marca 2015, Skype, 1.5h
+Obecni: Sebastian Celejewski, Adam Kowalewski, Dawid Kulesza, Marcin Tokarski, Kamil Kowalski, Kacper Jasiński
+
+Tematyka:
+- Frontent Kalkulatora OpenPKW - budowanie, deployment
+- Continuous Integration dla frontendu - potrzebny administrator Apache
+- Jak generować PDFy? Ze względu na spory rozmiar czcionek porzucamy na razie pomysł generowania PDFu po stronie front-endu.
+- Czyli: pozostaje backend w Javie.
+- Dalsze kroki: uporządkowanie kodu frontendu, przerobienie wszystkiego na Angulara, potem dopiero robienie walidacji, generowania XMLa i generowania PDFa.
 
 ## 23 marca 2015, Skype, 2h
 Obecni: Sebastian Celejewski, Adam Kowalewski, Dennis Gabriel Kruk, Adam Brzozowski, Kacper Jasiński, Dawid Kulesza, Adam Nakoneczny
