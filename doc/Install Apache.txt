@@ -1,0 +1,20 @@
+Serwer www:
+nazwa: sc-ec2-openpkw-apache
+IP: 52.4.122.192
+
+Instalowanie Apache:
+sudo yum install httpd
+
+Uruchomienie Apache:
+sudo service httpd start
+
+Konfiguracja Apache:
+/etc/httpd/conf/httpd.conf
+
+U¿ytkownik dla serwera webowego:
+sudo adduser openpkw-cd
+
+Nadanie has³a
+sudo passwd openpkw-cd
+
+scp -i /d/home/Sebastian/Security/sc-ec2-openpkw-apache-cd.pem -r dist/* openpkw-cd@52.4.122.192:/www/
