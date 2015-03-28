@@ -11,10 +11,14 @@ sudo service httpd start
 Konfiguracja Apache:
 /etc/httpd/conf/httpd.conf
 
-U¿ytkownik dla serwera webowego:
+UÅ¼ytkownik dla serwera webowego:
 sudo adduser openpkw-cd
 
-Nadanie has³a
-sudo passwd openpkw-cd
+Ustawienie proxy do JBossa:
+Plik: /etc/httpd/conf/httpd.conf
+
+ProxyPass /PdfServlet http://52.1.164.93:8080/openpkw/PdfServlet
+ProxyPassReverse /PdfServlet http://52.1.164.93:8080/openpkw/PdfServlet
+
 
 scp -i /d/home/Sebastian/Security/sc-ec2-openpkw-apache-cd.pem -r dist/* openpkw-cd@52.4.122.192:/www/
