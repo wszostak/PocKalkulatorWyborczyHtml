@@ -17,6 +17,8 @@ Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW sko
 - Serwer aplikacyjny (JBoss), na którym wystawiony jest backend: http://52.1.164.93:8080/openpkw/
 - Serwer Continuous Integration (GO CD): http://54.173.148.112/ (wyłączony, prawdopodobnie do skasowania)
 
+Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.docx
+
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
 - Wszyscy developerzy mają pełny dostęp do repozytorium.
