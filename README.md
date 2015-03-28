@@ -9,10 +9,22 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 
 ## Serwery
 - Serwer Continuous Integration (GO CD): http://54.173.148.112/ (na razie wyłączony)
+- Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/ (aktywny, trzeba poprosić Adama lub Sebastiana o konto)
 - Serwer webowy, na którym wystawiony jest prototyp: http://52.1.164.93:8080/openpkw/
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
+- Wszyscy developerzy mają pełny dostęp do repozytorium.
+- Każdy deweloper prowadzi prace na swoim branchu.
+- Co jakiś czas wszyscy deweloperzy spotykają się i omawiają propozycje zmian. Dyskusja może skończyć się mergem do mastera.
+
+## Struktura projektu
+- Na razie jest to aplikacja Java EE zawierająca frontend HTML/JScript/CSS.
+- Być może wkrótce przejdziemy na inną strukturę, wygodniejszą dla programistów front-endowych.
+
+## Konfiguracja środowiska deweloperskiego
+- Eclipse: Konfiguracja formattera: https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/konfiguracja/code-conventions-eclipse.xml
+- Eclipse: Domyślne kodowanie: UTF-8 (Window/Preferences/General/Workspace/Text file encoding
 
 ## Informacje o projekcie OpenPKW
 - Strona główna projektu: https://openpkw.pl/
