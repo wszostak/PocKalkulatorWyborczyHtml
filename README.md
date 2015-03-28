@@ -32,11 +32,15 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 
 ## Budowanie i deployment aplikacji
 ### Frontend
+W katalogu src/frontend:
+
 ```npm install``` - instaluje wszystkie zależności wymagane w projekcie<br/>
 ```npm run build``` - buduje wersję produkcyjną aplikacji<br/>
-```npm run server-dev``` - serwer deweloperski [http://localhost:9000](http://localhost:9000)
+```npm run server-dev``` - serwer deweloperski (http://localhost:9000)
 
 ### Backend
+W katalogu src/backend:
+
 ```mvn clean package``` - buduje backend<br/>
 ```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)
 ```mvn jboss-as:deploy -Dopenpkw-env:dev``` - wysyła aplikację na serwer aplikacyjny (JBoss) w środowisku OpenPKW-DEV 
