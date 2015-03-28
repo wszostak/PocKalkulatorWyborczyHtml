@@ -2,6 +2,7 @@
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE.
 
 ## Kontakt
+Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
 - Sebastian.Celejewski@wp.pl
 
 ## Funkcjonalność
