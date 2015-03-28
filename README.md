@@ -1,6 +1,9 @@
 # PocKalkulatorWyborczyHtml
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE.
 
+## Kontakt
+- Sebastian.Celejewski@wp.pl
+
 ## Funkcjonalność
 - Wprowadzanie wyników wyborów prezydenckich do formularza elektronicznego
 - Walidacja wyników wyborów prezydenckich
@@ -8,9 +11,10 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 - Drukowanie formularza, a ściślej generowanie pliku PDF, który można wydrukować
 
 ## Serwery
-- Serwer Continuous Integration (GO CD): http://54.173.148.112/ (na razie wyłączony)
-- Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/ (aktywny, trzeba poprosić Adama lub Sebastiana o konto)
-- Serwer webowy, na którym wystawiony jest prototyp: http://52.1.164.93:8080/openpkw/
+- Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/
+- Server webowy (Apache), na którym wystawiony jest frontend: http://52.4.122.192/
+- Serwer aplikacyjny (JBoss), na którym wystawiony jest backend: http://52.1.164.93:8080/openpkw/
+- Serwer Continuous Integration (GO CD): http://54.173.148.112/ (wyłączony, prawdopodobnie do skasowania)
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
@@ -19,8 +23,8 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 - Co jakiś czas wszyscy deweloperzy spotykają się i omawiają propozycje zmian. Dyskusja może skończyć się mergem do mastera.
 
 ## Struktura projektu
-- Na razie jest to aplikacja Java EE zawierająca frontend HTML/JScript/CSS.
-- Być może wkrótce przejdziemy na inną strukturę, wygodniejszą dla programistów front-endowych.
+- Frontend: aplikacja webowa (AngularJS).
+- Backend: aplikacja Java EE
 
 ## Konfiguracja środowiska deweloperskiego
 - Eclipse: Konfiguracja formattera: https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/konfiguracja/code-conventions-eclipse.xml
