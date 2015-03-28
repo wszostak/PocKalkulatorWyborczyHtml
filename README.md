@@ -1,4 +1,4 @@
-# PocKalkulatorWyborczyHtml
+﻿# PocKalkulatorWyborczyHtml
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE.
 
 ## Kontakt
@@ -29,6 +29,21 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 ## Konfiguracja środowiska deweloperskiego
 - Eclipse: Konfiguracja formattera: https://raw.githubusercontent.com/openpkw/PocKalkulatorWyborczyHtml/master/doc/konfiguracja/code-conventions-eclipse.xml
 - Eclipse: Domyślne kodowanie: UTF-8 (Window/Preferences/General/Workspace/Text file encoding
+
+## Budowanie i deployment aplikacji
+### Frontend
+W katalogu src/frontend:
+
+```npm install``` - instaluje wszystkie zależności wymagane w projekcie<br/>
+```npm run build``` - buduje wersję produkcyjną aplikacji<br/>
+```npm run server-dev``` - serwer deweloperski (http://localhost:9000)
+
+### Backend
+W katalogu src/backend:
+
+```mvn clean package``` - buduje backend<br/>
+```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)
+```mvn jboss-as:deploy -Dopenpkw-env:dev``` - wysyła aplikację na serwer aplikacyjny (JBoss) w środowisku OpenPKW-DEV 
 
 ## Informacje o projekcie OpenPKW
 - Strona główna projektu: https://openpkw.pl/

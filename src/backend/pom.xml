@@ -9,6 +9,39 @@
 	<name>OpenPKW POC WebApp</name>
 	<url>http://openpkw.org</url>
 
+	<profiles>
+		<profile>
+			<id>LOCAL</id>
+			<activation>
+				<property>
+					<name>openpkw-env</name>
+					<value>local</value>
+				</property>
+			</activation>
+			<properties>
+				<jboss.management.host>localhost</jboss.management.host>
+				<jboss.management.port>9999</jboss.management.port>
+				<jboss.management.user>go</jboss.management.user>
+				<jboss.management.password>ke734efjwEK</jboss.management.password>
+			</properties>
+		</profile>
+		<profile>
+			<id>DEV</id>
+			<activation>
+				<property>
+					<name>openpkw-env</name>
+					<value>dev</value>
+				</property>
+			</activation>
+			<properties>
+				<jboss.management.host>52.1.164.93</jboss.management.host>
+				<jboss.management.port>9999</jboss.management.port>
+				<jboss.management.user>go</jboss.management.user>
+				<jboss.management.password>ke734efjwEK</jboss.management.password>
+			</properties>
+		</profile>
+	</profiles>
+
 	<build>
 		<finalName>openpkw</finalName>
 		<plugins>
@@ -17,10 +50,10 @@
 				<artifactId>jboss-as-maven-plugin</artifactId>
 				<version>7.3.Final</version>
 				<configuration>
-					<hostname>52.1.164.93</hostname>
-					<port>9999</port>
-					<username>go</username>
-					<password>ke734efjwEK</password>
+					<hostname>${jboss.management.host}</hostname>
+					<port>${jboss.management.port}</port>
+					<username>${jboss.management.user}</username>
+					<password>${jboss.management.password}</password>
 				</configuration>
 			</plugin>
 		</plugins>
