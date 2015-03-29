@@ -5,7 +5,6 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
 - Rafał Reguła <Rafal.Regula@openpkw.pl>
 - Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
-- Adam Kowalewski <Adam.Kowalewski@gmail.com>
 
 ## Funkcjonalność
 - Wprowadzanie wyników wyborów prezydenckich do formularza elektronicznego
