@@ -41,6 +41,7 @@ W katalogu src/frontend:
 ```npm install``` - instaluje wszystkie zależności wymagane w projekcie<br/>
 ```npm run build``` - buduje wersję produkcyjną aplikacji<br/>
 ```npm run server-dev``` - serwer deweloperski (http://localhost:9000)
+```npm run deploy``` - wysyła aplikację na serwer webowy w środowisku OpenPKW-DEV
 
 ### Backend
 W katalogu src/backend:
