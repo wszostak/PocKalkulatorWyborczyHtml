@@ -3,7 +3,8 @@ Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScr
 
 ## Kontakt
 Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
-- Sebastian.Celejewski@wp.pl
+- Rafał Reguła <Rafal.Regula@openpkw.pl>
+- Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
 
 ## Funkcjonalność
 - Wprowadzanie wyników wyborów prezydenckich do formularza elektronicznego
@@ -16,6 +17,8 @@ Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW sko
 - Server webowy (Apache), na którym wystawiony jest frontend: http://52.4.122.192/
 - Serwer aplikacyjny (JBoss), na którym wystawiony jest backend: http://52.1.164.93:8080/openpkw/
 - Serwer Continuous Integration (GO CD): http://54.173.148.112/ (wyłączony, prawdopodobnie do skasowania)
+
+Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.docx
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
@@ -38,6 +41,7 @@ W katalogu src/frontend:
 ```npm install``` - instaluje wszystkie zależności wymagane w projekcie<br/>
 ```npm run build``` - buduje wersję produkcyjną aplikacji<br/>
 ```npm run server-dev``` - serwer deweloperski (http://localhost:9000)
+```npm run deploy``` - wysyła aplikację na serwer webowy w środowisku OpenPKW-DEV
 
 ### Backend
 W katalogu src/backend:
