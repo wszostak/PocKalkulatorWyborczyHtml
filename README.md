@@ -1,5 +1,5 @@
 ﻿# PocKalkulatorWyborczyHtml
-Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE.
+Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE. Tworzony w celu usprawnienia komunikacji programistów z analitykami - weryfikacji koncepcji, założeń, możliwości technologicznych, interfejsu użytkownika itp.
 
 ## Kontakt
 Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
@@ -25,6 +25,7 @@ Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/Po
 - Wszyscy developerzy mają pełny dostęp do repozytorium.
 - Każdy deweloper prowadzi prace na swoim branchu.
 - Co jakiś czas wszyscy deweloperzy spotykają się i omawiają propozycje zmian. Dyskusja może skończyć się mergem do mastera.
+- To nie jest kod produkcyjny, tylko prototyp, który trzeba szybko wyhackować, a potem pójdzie do kosza, więc spokojnie ze wzorcami projektowymi, nazewnictwem i cyzelowaniem szczegółów.
 
 ## Struktura projektu
 - Frontend: aplikacja webowa (AngularJS).
