@@ -1,30 +1,39 @@
 ﻿# PocKalkulatorWyborczyHtml
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE. Tworzony w celu usprawnienia komunikacji programistów z analitykami - weryfikacji koncepcji, założeń, możliwości technologicznych, interfejsu użytkownika itp.
 
-## Kontakt
-Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
-- Rafał Reguła <Rafal.Regula@openpkw.pl>
-- Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
+## Jak dołączyć?
+- Zapoznaj się z kodem źródłowym. Zwróć uwagę nie tylko na branch master, ale także na pozostałe niedawno modyfikowane branche.
+- Zapoznaj się z notatkami ze [spotkań analitycznych](https://github.com/openpkw/openpkw/blob/master/Protokoly%20spotkan.md) oraz z notatkami ze [spotkań zespołu deweloperskiego](https://github.com/openpkw/PocKalkulatorWyborczyHtml/blob/master/Protokoly_spotkan.md) i dowiedz się jakie mamy priorytety na najbliższe dni.
+- Zapoznaj się z [listą zadań](https://trello.com/b/1PocOld8/poc-wp) na Trello.
+- Jeśli masz uwagi dotyczące aplikacji, jej architektury, kodu, funkcjonalności itd. - utwórz Issue w GitHubie. 
+- Utwórz swojego forka, wprowadź swoje zmiany i wyślij nam pull request.
+- Jeśli możesz regularnie poświęcić trochę czasu na pomoc w rozwijaniu OpenPKW, gorąco zapraszamy! Skontaktuj się z nami, aby uzyskać pełny dostęp do repozytorium kodu. Chętnie przekażemy Ci odpowiedzialność za rozwijanie konkretnych części aplikacji, konkretnych funkcjonalności, bądź konkretnych aspektów procesu deweloperskiego (bezpieczeństwo, testowanie, continuous delivery itd.).
+- Kontakt:
+  - Rafał Reguła: <Rafal.Regula@openpkw.pl>
+  - Sebastian Celejewski: <Sebastian.Celejewski@wp.pl>
 
 ## Funkcjonalność
-- Wprowadzanie wyników wyborów prezydenckich do formularza elektronicznego
-- Walidacja wyników wyborów prezydenckich
-- Wysyłanie formularza w postaci elektronicznej na serwer
-- Drukowanie formularza, a ściślej generowanie pliku PDF, który można wydrukować
+### Wersja 0.1 (bieżąca)
+- [KW-U-1](http://trello.com/c/wHH5FeuB) Wprowadzanie i walidacja wyników wyborów prezydenckich w formularzu elektronicznym
+- [KW-U-2](https://trello.com/c/3nQc4SMi) Generowanie protokołu w postaci pliku PDF
+- [KW-U-3](https://trello.com/c/LzikRQvG) Wysyłanie protokołu w postaci elektronicznej na serwer
+
+### Wersja 0.2 (przyszła)
+- [KW-U-4](https://trello.com/c/xXDZeLrq) Sporządzanie raportu błędów.
+- [KW-U-5](https://trello.com/c/cOlQ97Vi) Sporządzanie listy uwag i adnotacji.
+- [KW-U-6](https://trello.com/c/I4WIjpR9) Zabezpieczanie protokołu certyfikatem.
 
 ## Serwery
 - Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/
 - Server webowy (Apache), na którym wystawiony jest frontend: http://52.4.122.192/
 - Serwer aplikacyjny (JBoss), na którym wystawiony jest backend: http://52.1.164.93:8080/openpkw/
-- Serwer Continuous Integration (GO CD): http://54.173.148.112/ (wyłączony, prawdopodobnie do skasowania)
 
-Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.docx
+Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.pdf
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
 - Wszyscy developerzy mają pełny dostęp do repozytorium.
-- Każdy deweloper prowadzi prace na swoim branchu.
-- Co jakiś czas wszyscy deweloperzy spotykają się i omawiają propozycje zmian. Dyskusja może skończyć się mergem do mastera.
+- Każdy feature implementowany jest na branchu. Przed mergem do mastera deweloperzy spotykają się i omawiają propozycje zmian.
 - To nie jest kod produkcyjny, tylko prototyp, który trzeba szybko wyhackować, a potem pójdzie do kosza, więc spokojnie ze wzorcami projektowymi, nazewnictwem i cyzelowaniem szczegółów.
 
 ## Struktura projektu
@@ -48,7 +57,7 @@ W katalogu src/frontend:
 W katalogu src/backend:
 
 ```mvn clean package``` - buduje backend<br/>
-```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)
+```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)<br/>
 ```mvn jboss-as:deploy -Dopenpkw-env:dev``` - wysyła aplikację na serwer aplikacyjny (JBoss) w środowisku OpenPKW-DEV 
 
 ## Informacje o projekcie OpenPKW
