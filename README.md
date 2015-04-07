@@ -7,9 +7,15 @@ Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW sko
 - Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
 
 ## Funkcjonalność
-- KW-U-1 Wprowadzanie i walidacja wyników wyborów prezydenckich w formularzu elektronicznym
-- KW-U-2 Generowanie protokołu w postaci pliku PDF
-- KW-U-3 Wysyłanie protokołu w postaci elektronicznej na serwer
+### Wersja 0.1 (bieżąca)
+- [KW-U-1](http://trello.com/c/wHH5FeuB) Wprowadzanie i walidacja wyników wyborów prezydenckich w formularzu elektronicznym
+- [KW-U-2](https://trello.com/c/3nQc4SMi) Generowanie protokołu w postaci pliku PDF
+- [KW-U-3](https://trello.com/c/LzikRQvG) Wysyłanie protokołu w postaci elektronicznej na serwer
+
+### Wersja 0.2 (przyszła)
+- [KW-U-4](https://trello.com/c/xXDZeLrq) Sporządzanie raportu błędów.
+- [KW-U-5](https://trello.com/c/cOlQ97Vi) Sporządzanie listy uwag i adnotacji.
+- [KW-U-6](https://trello.com/c/I4WIjpR9) Zabezpieczanie protokołu certyfikatem.
 
 ## Serwery
 - Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/
@@ -21,8 +27,7 @@ Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/Po
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
 - Wszyscy developerzy mają pełny dostęp do repozytorium.
-- Każdy deweloper prowadzi prace na swoim branchu.
-- Co jakiś czas wszyscy deweloperzy spotykają się i omawiają propozycje zmian. Dyskusja może skończyć się mergem do mastera.
+- Każdy feature implementowany jest na branchu. Przed mergem do mastera deweloperzy spotykają się i omawiają propozycje zmian.
 - To nie jest kod produkcyjny, tylko prototyp, który trzeba szybko wyhackować, a potem pójdzie do kosza, więc spokojnie ze wzorcami projektowymi, nazewnictwem i cyzelowaniem szczegółów.
 
 ## Struktura projektu
