@@ -7,18 +7,16 @@ Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW sko
 - Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
 
 ## Funkcjonalność
-- Wprowadzanie wyników wyborów prezydenckich do formularza elektronicznego
-- Walidacja wyników wyborów prezydenckich
-- Wysyłanie formularza w postaci elektronicznej na serwer
-- Drukowanie formularza, a ściślej generowanie pliku PDF, który można wydrukować
+- KW-U-1 Wprowadzanie i walidacja wyników wyborów prezydenckich w formularzu elektronicznym
+- KW-U-2 Generowanie protokołu w postaci pliku PDF
+- KW-U-3 Wysyłanie protokołu w postaci elektronicznej na serwer
 
 ## Serwery
 - Serwer Continuous Integration (Jenkins): http://91.250.114.134:8080/ci-jenkins/
 - Server webowy (Apache), na którym wystawiony jest frontend: http://52.4.122.192/
 - Serwer aplikacyjny (JBoss), na którym wystawiony jest backend: http://52.1.164.93:8080/openpkw/
-- Serwer Continuous Integration (GO CD): http://54.173.148.112/ (wyłączony, prawdopodobnie do skasowania)
 
-Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.docx
+Szczegółowe informacje o konfiguracji serwerów: https://github.com/openpkw/PocKalkulatorWyborczyHtml/raw/master/doc/ports_and_protocols.pdf
 
 ## Oranizacja pracy
 - Tablica z zadaniami: https://trello.com/b/1PocOld8/poc-wp
@@ -48,7 +46,7 @@ W katalogu src/frontend:
 W katalogu src/backend:
 
 ```mvn clean package``` - buduje backend<br/>
-```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)
+```mvn jboss-as:deploy -Dopenpkw-env:local``` - wysyła aplikację na lokalny serwer aplikacyjny (JBoss)<br/>
 ```mvn jboss-as:deploy -Dopenpkw-env:dev``` - wysyła aplikację na serwer aplikacyjny (JBoss) w środowisku OpenPKW-DEV 
 
 ## Informacje o projekcie OpenPKW
