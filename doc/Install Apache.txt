@@ -20,5 +20,7 @@ Plik: /etc/httpd/conf/httpd.conf
 ProxyPass /PdfServlet http://52.1.164.93:8080/openpkw/PdfServlet
 ProxyPassReverse /PdfServlet http://52.1.164.93:8080/openpkw/PdfServlet
 
+ProxyPass /backend/service/protocol http://52.1.164.93:8080/openpkw/service/protocol
+ProxyPassReverse /backend/service/protocol http://52.1.164.93:8080/openpkw/service/protocol
 
 scp -i /d/home/Sebastian/Security/sc-ec2-openpkw-apache-cd.pem -r dist/* openpkw-cd@52.4.122.192:/www/
