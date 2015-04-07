@@ -1,10 +1,16 @@
 ﻿# PocKalkulatorWyborczyHtml
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE. Tworzony w celu usprawnienia komunikacji programistów z analitykami - weryfikacji koncepcji, założeń, możliwości technologicznych, interfejsu użytkownika itp.
 
-## Kontakt
-Aby dołączyć do prac programistycznych nad prototypem Kalkulatora OpenPKW skontaktuj się z następującymi osobami:
-- Rafał Reguła <Rafal.Regula@openpkw.pl>
-- Sebastian Celejewski <Sebastian.Celejewski@wp.pl>
+## Jak dołączyć?
+- Zapoznaj się z kodem źródłowym. Zwróć uwagę nie tylko na branch master, ale także na pozostałe niedawno modyfikowane branche.
+- Zapoznaj się z notatkami ze [spotkań analitycznych](https://github.com/openpkw/openpkw/blob/master/Protokoly%20spotkan.md) oraz z notatkami ze [spotkań zespołu deweloperskiego](https://github.com/openpkw/PocKalkulatorWyborczyHtml/blob/master/Protokoly_spotkan.md) i dowiedz się jakie mamy priorytety na najbliższe dni.
+- Zapoznaj się z [listą zadań](https://trello.com/b/1PocOld8/poc-wp) na Trello.
+- Jeśli masz uwagi dotyczące aplikacji, jej architektury, kodu, funkcjonalności itd. - utwórz Issue w GitHubie. 
+- Utwórz swojego forka, wprowadź swoje zmiany i wyślij nam pull request.
+- Jeśli możesz regularnie poświęcić trochę czasu na pomoc w rozwijaniu OpenPKW, gorąco zapraszamy! Skontaktuj się z nami, aby uzyskać pełny dostęp do repozytorium kodu. Chętnie przekażemy Ci odpowiedzialność za rozwijanie konkretnych części aplikacji, konkretnych funkcjonalności, bądź konkretnych aspektów procesu deweloperskiego (bezpieczeństwo, testowanie, continuous delivery itd.).
+- Kontakt:
+  - Rafał Reguła: <Rafal.Regula@openpkw.pl>
+  - Sebastian Celejewski: <Sebastian.Celejewski@wp.pl>
 
 ## Funkcjonalność
 ### Wersja 0.1 (bieżąca)
