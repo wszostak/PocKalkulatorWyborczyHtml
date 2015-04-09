@@ -5,8 +5,20 @@ var config = {
     app: 'src', //app sources
     dist: 'dist', // builded app
     livereloadPort: 35729,
-    backendProxy: '52.1.164.93'
+    backendProxy: '91.250.114.134'
 };
+
+try {
+    var scpPrivateKey = require('fs').readFileSync((process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE)+'/.ssh/openpkw-jenkins-cd.pem');
+} catch (err) {
+    if (err.code !== 'ENOENT') {
+        throw err;
+    }
+
+    console.warn('[WARNING!!] scpPrivateKey not found, deploy task has not been registered');
+    scpPrivateKey = false;
+  // Handle a file-not-found error
+}
 
 module.exports = function(grunt) {
 
@@ -184,9 +196,7 @@ module.exports = function(grunt) {
                     'angular.route.js':'angular-route/angular-route.min.js',
 					'jquery.js':'jquery/dist/jquery.min.js',
 					'JsBarcode.js' : 'jsbarcode/JsBarcode.js',
-					'md5.js': 'md5/build/md5.min.js',
-					'pdfmake.js' : 'pdfmake/build/pdfmake.min.js'
-                    
+					'md5.js': 'md5/build/md5.min.js'
 				}
 			},
             /*css:{
@@ -258,12 +268,12 @@ module.exports = function(grunt) {
                 }
             },
             proxies: [{
-                    context: '/PdfServlet',
+                    context: '/backend/service/protocol',
                     host: config.backendProxy,
                     port: 8080,
                     https: false,
                     xforward: false,
-                    rewrite: {'^/PdfServlet': '/openpkw/PdfServlet'}
+                    rewrite: {'^(\/backend\/service\/protocol[/]{0,1})(.*)$': '/poc-backend/service/protocol/$2'}
                 }]
             
         },
@@ -272,7 +282,7 @@ module.exports = function(grunt) {
             options: {
                 host: '52.4.122.192',
                 username: 'openpkw-cd',
-                privateKey: require('fs').readFileSync((process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE)+'/.ssh/openpkw-jenkins-cd.pem'),
+                privateKey: scpPrivateKey,
                 tryKeyboard: true
             },
             dist: {
@@ -298,7 +308,9 @@ module.exports = function(grunt) {
     grunt.registerTask('test',['clean','jshint','copy','wiredep','useminPrepare','concat','cssmin','usemin',/*'uglify'*/'htmlmin']);
     grunt.registerTask('test2', ['uglify:app']);
 
-    grunt.loadNpmTasks('grunt-scp');
-    grunt.registerTask('deploy', ['scp']);
+    if (scpPrivateKey !== false){
+        grunt.registerTask('deploy', ['scp']);    
+    } 
+    
 
 };
