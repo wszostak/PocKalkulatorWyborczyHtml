@@ -76,7 +76,7 @@ app.controller('CalcController', ['$scope', '$http', '$window', 'calcService', f
             ]
         };
 
-        $http.post('backend/service/protocol', exampleData, {
+        $http.post('/backend/service/protocol', exampleData, {
             headers: {
                 'Content-Type': 'application/json'
             },

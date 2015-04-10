@@ -5,7 +5,12 @@ var config = {
     app: 'src', //app sources
     dist: 'dist', // builded app
     livereloadPort: 35729,
-    backendProxy: '52.1.164.93'
+    backendProxy: '52.1.164.93'   // JBoss u Sebastiana (podstawowy backend)
+//    backendProxy: '91.250.114.134'  // WebLogic u Adama (dodatkowy backend)
+
+// Uwaga, zmieniając IP trzeba też zmienić ścieżkę w sekcji rewrite konfiguracji proxies dalej w tym pliku
+// Na serwerze Sebastiana jest to /openpkw/service/protocol
+// Na serwerze Adama jest to /poc-backend/service/protocol
 };
 
 try {
