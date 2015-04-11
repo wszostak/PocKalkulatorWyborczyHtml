@@ -4,6 +4,7 @@
 - Zadania programistyczne są na [Trello](https://trello.com/b/1PocOld8/poc-wp).
 - Sprawy organizacyjne
   - Kontakty mailowe do wszystkich są w OpenProject.
+  - Tomek założy listę mailingową dla frontendowców OpenPKW.
   - Kto nie ma konta w OpenProject, wysyła maila do Tomka z prośbą o dodanie.
   - Kontakty Skypowe są w dyskusji Skypowej.
   - Kto nie jest dodany do zespołu OpenPKW w GitHubie, przysyła Sebastianowi swoją nazwę konta z GitHuba i Sebastian go dodaje.
