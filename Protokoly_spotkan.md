@@ -1,8 +1,43 @@
 ﻿# Protokoły spotkań
 
 ## Aktualna lista TODO
-- Marcin, Kamil i Kacper - uporządkowanie kodu frontendu i przerobienie go na Angulara.
-- Sebastian - poszukiwanie admina Apache na listach dyskusyjnych
+- Zadania programistyczne są na [Trello](https://trello.com/b/1PocOld8/poc-wp).
+- Sprawy organizacyjne
+  - Kontakty mailowe do wszystkich są w OpenProject.
+  - Tomek założy listę mailingową dla frontendowców OpenPKW.
+  - Kto nie ma konta w OpenProject, wysyła maila do Tomka z prośbą o dodanie.
+  - Kontakty Skypowe są w dyskusji Skypowej.
+  - Kto nie jest dodany do zespołu OpenPKW w GitHubie, przysyła Sebastianowi swoją nazwę konta z GitHuba i Sebastian go dodaje.
+  - Kto nie jest dodany do tablicy OpenPKW w Trello, przysyła Sebastianowi swoją nazwę konta w Trello i Sebastian go dodaje.
+- Sebastian i Tomek - uporządkowanie infrastruktury
+  - Przeinstalowanie systemu operacyjnego na serwerze Dobromir.
+  - Skonfigurowanie od nowa Continuous Delivery.
+  - Skonfigurowanie środowiska IT (integration tests).
+  - Skonfigurowanie środowiska UAT (testy ręczne).
+  - Skonfigurowanie środowiska produkcyjnego (EXT? PROD?).
+
+## 10 kwietnia 2015, Skype, 1h
+Obecni: Sebastian Celejewski, Rafał Reguła, Krzysztof Miksa, Kacper Jasiński, Marcin Tokarski, Tomasz Woźniak, Wojciech Szóstak, Marcin Marzec, Adam Nakoneczny
+
+Tematyka:
+- Przywitanie nowych osób.
+- Bieżąca sytuacja w projekcie OpenPKW.
+- Relacja pomiędzy projektami OPW i OpenPKW. Są to dwa osobne projekty. OpenPKW tworzy oprogramowanie dla PKW, do wykorzystania przez członków komisji wyborczych, zgodne ze wszystkimi przepisami, wytycznymi, praktykami komisji wyborczych. OPW natomiast tworzy oprogramowanie do niezależnego od PKW weryfikowania wyników wyborych, wykorzystywane przez wolontariuszy, którzy będą wprowadzać publicznie dostępne protokoły wyborcze do systemu. Zespoły OpenPKW i OPW są w większej części wspólne, tj. osoby tworzące OpenPKW tworzą również OPW. Uwspólnienie dotyczy także infrastruktury, tj. OpenPKW wykorzystuje serwery OPW.
+- Omówienie statusu kodu w repozytorium PocKalkulatorWyborczyHtml. Jest to prototyp, w którym ćwiczymy funkcjonalność, natomiast na razie pomijamy sprawy takie, jak bezpieczeństwo, wydajność itd.
+- Omówienie ostatnich zmian w kodzie (niewiele, głównie uporządkowanie backendu).
+- Omówienie obecnej i przyszłej technologii Kalkulatora OpenPKW. Obecnie: AngularJS na frontend i Java EE na backend.
+- Omówienie funkcjonalności, która jest do zaimplementowania w najbliższej przyszłości:
+  - Wprowadzanie danych i walidacja.
+  - Generowanie pliku PDF.
+  - Eksport danych na serwer.
+- Omówienie metody wspólnej pracy.
+  - Każda funkcja systemu rozwijana będzie na swoim branchu. Po ukończeniu danej funkcjonalności lub jakiegoś jej skończonego zakresu robimy merge do brancha master.
+  - Zmiany wprowadzamy na swoich forkach i wysyłamy pull requesty. Pull request będzie zweryfikowany przez innych członków drużyny i wtedy będzie wmergowany do brancha danej funkcji.
+  - Będziemy tworzyć osobne branche lub taki dla wydań systemu.
+- Omówienie konwencji programistycznych.
+   - https://github.com/johnpapa/angular-styleguide
+   - http://jscs.info/
+   - Od razu wprowadzamy testy.
 
 ## 27 marca 2015, Skype, 1.5h
 Obecni: Sebastian Celejewski, Adam Kowalewski, Dawid Kulesza, Marcin Tokarski, Kamil Kowalski, Kacper Jasiński
