@@ -1,4 +1,12 @@
-﻿# PocKalkulatorWyborczyHtml
+# Uwaga
+
+Projekt PocKalkulatorWyborczyHtml zostal rozbity na dwa projekty:
+- openpkw-kalkulator-obwodowy-web
+- openpkw-dokument-generator
+
+Prosimy nie wrzucać już żadnych zmian do tego projektu. Wkrótce zostanie on usuniety.
+
+# PocKalkulatorWyborczyHtml
 Prototyp kalkulatora wyborczego tworzony w technologiach webowych (HTML/CSS/JScript) z częścią serwerową w JEE. Tworzony w celu usprawnienia komunikacji programistów z analitykami - weryfikacji koncepcji, założeń, możliwości technologicznych, interfejsu użytkownika itp.
 
 ## Jak dołączyć?
